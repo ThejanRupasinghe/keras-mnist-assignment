@@ -26,7 +26,7 @@ print("x_train Shape:", x_train.shape)
 print("Training data:", x_train.shape[0])
 print("Testing data:", x_test.shape[0])
 
-# convert label (dependent variable) to categorical - to use softmax in NN
+# convert label (dependent variable) to binary one-hot - to use softmax in NN
 y_train = utils.to_categorical(y_train, 10)
 y_test = utils.to_categorical(y_test, 10)
 
